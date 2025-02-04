@@ -1,0 +1,185 @@
+header{
+  display: flex;
+  background-color: greenyellow;
+  justify-content: center;
+  font-family: "Poppins", serif;
+}
+
+.mainsection{
+  width: fit-content;
+  margin: 40px auto;
+}
+
+ul{
+  padding:0px
+}
+.logo{
+  width: 70px;
+  margin-right: 10px;
+}
+
+.logo:hover {
+  animation: shake 0.7s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-30deg); }
+  50%{ transform: rotate(30deg); }
+  75% { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.input{
+  display: flex;
+  /* margin: 40px auto; */
+  font-family: "Inter", serif;
+  justify-content: center;
+  min-width: 749.6px
+}
+
+.input > input{
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 500px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 500;
+  border: 2px solid greenyellow;
+  background-color: #3a3a3a;
+  color: white;
+  transition: box-shadow 0.3s;
+  outline: none;
+}
+
+.input > input:hover{
+  border: 2px solid greenyellow;
+}
+
+.input > input:focus{
+  border-color: 2px solid #ADFF2F;  
+  box-shadow: 0px 0px 10px #ADFF2F;
+}
+
+.input > button{
+  margin-left: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: box-shadow 0.3s;
+  background-color: #ADFF2F;
+  color: #3a3a3a;
+}
+
+.input > button:hover{
+  box-shadow: 0px 0px 10px #ADFF2F;
+}
+
+.ingredients-ullist{
+  font-family: "Inter",serif;
+  font-size: 25px;
+  color: rgb(221, 221, 221);
+  list-style: none;
+}
+
+.ingredient-list{
+  font-size: 25px;
+  font-family:"Inter",serif;
+  margin-left: 0px;
+  color: rgb(221,221,221);
+}
+
+.ingredientsList > li{
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.ingredientsList > li:before{
+  content: "• ";
+}
+
+.ingredientsList > li:hover .hiddenbutton{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("C:/Programming/React/chefclaude-app/src/assets/cross.svg");
+  border: none;
+  margin-left: 5px;
+}
+
+.get-recipe-container{
+  border: 5px solid greenyellow;
+  display: flex;
+  color: rgb(221,221,221);
+  justify-content: space-between;
+  width: 700px;
+  margin: 40px auto;
+  font-size: 20px;
+  padding: 20px;
+  font-family: "Inter",serif;
+  border-radius: 5px;
+}
+
+.get-recipe-container > button{
+  width: 170px;
+  height: 50px;
+  margin: auto 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ADFF2F;
+  color: #3a3a3a;
+  border: none;
+}
+
+.get-recipe-container > button:hover{
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 10px #ADFF2F;
+}
+
+.recipe{
+  color: rgb(238, 238, 238);
+  text-align:start;
+  font-family: "Inter",serif;
+  margin: 40px auto;
+  font-size: 22px;
+  padding: 0px 40px;
+  border:5px solid #ADFF2F;
+  border-radius: 10px;
+  max-width: 1100px;
+}
+.recipe >ul > li{
+  margin-bottom: 0px;
+  margin-left:30px;
+}
+.recipe >ol > li{
+  margin-bottom: 0px;
+}
+
+.recipe > h2{
+  color:#ADFF2F;
+  text-align: center;
+}
+
+.hiddenbutton{
+  display: none;
+}
+
+.loadingIcon{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.warning{
+  color:#ff4d4d;
+  font-family: "Inter",serif;
+  margin-top: 10px;
+}
+
