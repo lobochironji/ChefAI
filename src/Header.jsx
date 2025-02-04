@@ -1,4 +1,4 @@
-import chefLogo from 'C:/Programming/React/chefclaude-app/src/chef.svg'
+import chefLogo from '/src/assets/chef.svg'
 export default function Header(){
     return(
     <header>

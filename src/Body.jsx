@@ -2,7 +2,7 @@ import React from 'react'
 import { useRef, useEffect} from 'react';
 import Recipe from './Recipe';
 import IngredientsList from './Ingredients-list';
-import { getRecipeFromMistral } from 'C:/Programming/React/chefclaude-app/src/ai.js';
+import { getRecipeFromMistral } from '/src/ai.js';
 export default function Body()
 {
     const targetRef = useRef(null);
