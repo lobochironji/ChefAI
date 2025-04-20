@@ -2,15 +2,15 @@ import React from 'react'
 import { useRef, useEffect} from 'react';
 import Recipe from './Recipe';
 import IngredientsList from './Ingredients-list';
-import { getRecipeFromMistral } from '/src/ai.js';
+import { getRecipeFromGroq } from './ai';
 export default function Body()
 {
     const targetRef = useRef(null);
     const [ingredients,setIngredients] = React.useState([]);
     const [recipe,setRecipe] = React.useState(null);
-    const [warning, setWarning] = React.useState(""); 
+    const [warning,setWarning] = React.useState("");
     const ingredientsList = ingredients.map((ingredient) => 
-    <section key={ingredient} className="ingredientsList">
+        <section key={ingredient} className="ingredientsList">
         <li>{ingredient}
         <button id={ingredient} className="hiddenbutton" onClick={removeItem}></button>
         </li>
@@ -50,7 +50,7 @@ export default function Body()
     async function getRecipe(){
         setRecipe(null);
         setRequestRecipe(true);
-        const storedRecipe = await getRecipeFromMistral(ingredients);
+        const storedRecipe = await getRecipeFromGroq(ingredients);
         setRecipe(storedRecipe);
     }
 

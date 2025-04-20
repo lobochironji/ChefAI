@@ -108,7 +108,7 @@ ul{
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("C:/Programming/React/chefclaude-app/src/assets/cross.svg");
+  background: url("/src/assets/cross.svg");
   border: none;
   margin-left: 5px;
 }

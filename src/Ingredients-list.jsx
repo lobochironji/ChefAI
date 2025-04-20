@@ -1,11 +1,11 @@
 export default function Ingredientlist(props){    
 
-    
-    return  (
-        <section>
+    return  ( 
+    <section>
             <h2 className="ingredient-list">Ingredients on hand :</h2>
             <ul className="ingredients-ullist">
                 {props.ingredientsListArray}
+       
             </ul>
             {props.ingredientsarraylength > 4 &&
             <div className="get-recipe-container">
